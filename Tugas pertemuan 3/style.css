@@ -1,0 +1,182 @@
+/* Reset CSS Dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    background-color: #1a1a1a;
+}
+
+header {
+    background-image: url('Blackpink.jpeg'); /* Ganti 'banner.jpg' dengan nama file gambar Anda */
+    background-size: cover;          /* Agar gambar menutupi seluruh header */
+    background-position: center;     /* Posisi gambar di tengah */
+    background-repeat: no-repeat;    /* Agar gambar tidak berulang */
+    color: #ffffff;                  /* Warna teks diubah jadi putih agar kontras */
+    text-align: center;
+    padding: 40px 20px;              /* Padding diperbesar agar gambar lebih terlihat */
+    margin-bottom: 10px;
+    border: 2px solid #ffffff;
+    position: relative;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+nav {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border: 2px solid #ff2a85;
+}
+
+.logo {
+    background-color: #ff2a85;
+    color: #000000;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.menu a:hover, .menu a.active {
+    background-color: #ff2a85;
+    color: #000000;
+}
+
+/* 3. Section (Wadah CSS Grid untuk Article & Aside) */
+section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* Article */
+article {
+    background-color: #242424;
+    padding: 20px;
+    border: 2px solid #00e5ff;
+}
+
+article h2 {
+    color: #ff2a85;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff2a85;
+    padding-bottom: 5px;
+}
+
+article p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Aside */
+aside {
+    background-color: #2b2b2b;
+    padding: 20px;
+    border: 2px solid #ffea00;
+}
+
+aside h3 {
+    color: #ffea00;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* 4. Footer */
+footer {
+    background-color: #333333;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid #ffffff;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+/* Elemen Tambahan Konten */
+.grid-members {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.card-member {
+    background-color: #1a1a1a;
+    padding: 10px;
+    border: 1px solid #ff2a85;
+    border-radius: 5px;
+}
+
+.card-member h4 {
+    color: #ff2a85;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #555555;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    font-size: 13px;
+}
+
+th {
+    background-color: #ff2a85;
+    color: #000000;
+}
+
+.biodata-table td {
+    padding: 8px;
+}
+
+/* Responsif untuk Layar Kecil */
+@media (max-width: 600px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
