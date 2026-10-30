@@ -23,11 +23,11 @@ body {
 header {
     background-image: url('Blackpink.jpeg'); /* Ganti 'banner.jpg' dengan nama file gambar Anda */
     background-size: cover;          /* Agar gambar menutupi seluruh header */
-    background-position: center;     /* Posisi gambar di tengah */
+    background-position: center;     
     background-repeat: no-repeat;    /* Agar gambar tidak berulang */
-    color: #ffffff;                  /* Warna teks diubah jadi putih agar kontras */
+    color: #ffffff;                 
     text-align: center;
-    padding: 40px 20px;              /* Padding diperbesar agar gambar lebih terlihat */
+    padding: 40px 20px;             
     margin-bottom: 10px;
     border: 2px solid #ffffff;
     position: relative;
