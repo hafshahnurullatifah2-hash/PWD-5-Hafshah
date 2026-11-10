@@ -31,7 +31,6 @@ function renderProducts() {
         pStok.appendChild(document.createTextNode(`Stok: ${product.stok}`));
         card.appendChild(pStok);
 
-        // Tombol Tambah ke Keranjang
         const button = document.createElement('button');
         button.className = 'btn-add';
         button.setAttribute('data-id', product.id);
@@ -68,7 +67,6 @@ $(document).ready(function() {
             return;
         }
 
-        // Kurangi stok produk secara lokal
         product.stok -= 1;
         renderPrdStok(); 
 

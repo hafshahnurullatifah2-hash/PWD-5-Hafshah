@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toko Online Sederhana</title>
-    <!-- Memuat Google Fonts, file CSS terpisah, dan jQuery CDN -->
+    <title>Toko Online AllChyra</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -12,22 +11,19 @@
 <body>
 
     <header>
-        <h1>Toko Online Sederhana</h1>
+        <h1>Toko Online AllChyra</h1>
         <p>Silakan pilih produk yang tersedia di bawah ini</p>
     </header>
 
     <div class="container">
-        <!-- Kolom Kiri: Produk & Pencarian -->
         <div class="main-content">
             <div class="search-box">
                 <input type="text" id="searchProduct" placeholder="Cari nama produk...">
             </div>
-            <div id="productContainer" class="product-grid">
-                <!-- Produk akan dirender secara dinamis menggunakan JS Vanilla -->
+            <div id="productContainer" class="product-grid"> -->
             </div>
         </div>
 
-        <!-- Kolom Kanan: Keranjang Belanja -->
         <div class="cart-section">
             <div class="cart-header" id="toggleCart">
                 <h2>Keranjang Belanja</h2>
@@ -35,7 +31,6 @@
             </div>
             <div class="cart-panel" id="cartPanel">
                 <ul class="cart-items" id="cartList">
-                    <!-- Item keranjang masuk via jQuery append() -->
                 </ul>
                 <div class="cart-summary" id="cartSummary">
                     Total Item: 0 | Total Harga: Rp 0
@@ -49,7 +44,6 @@
         </div>
     </div>
 
-    <!-- Memuat file JavaScript eksternal -->
     <script src="script.js"></script>
 </body>
 </html>
